@@ -7,9 +7,9 @@ if (num < 99)
     Console.Write("третьей цифры нет ");
 else
 {
-while (num>999)
-{
-    num/=10;
-}
+    while (num > 999)
+    {
+        num /= 10;
+    }
     Console.Write($"третья цифра:  {num % 10}");
 }
