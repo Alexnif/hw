@@ -19,3 +19,11 @@
 // [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 // [“Russia”, “Denmark”, “Kazan”] → []
 
+string[] mass = new string[4] { "Hello", "2", "world", ":-)" };
+string[] mass2 = new string[mass.Length];
+int j = 0;
+for (int i = 0; i < mass.Length; i++)
+{
+    if (mass[i].Length <= 3) { mass2[j] = mass[i]; j++; }
+}
+Console.WriteLine(String.Join(" ", mass2));
